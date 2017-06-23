@@ -33,3 +33,5 @@ vi:
       confirm: Xác nhận
       complete: Hoàn thành 
       address: Địa chỉ
+    cart:
+      add: Cho vào giỏ
