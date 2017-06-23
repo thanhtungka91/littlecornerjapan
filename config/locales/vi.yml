@@ -21,6 +21,8 @@
 
 vi:
   spree:
+    cart:
+      add: Cho vào giỏ
     cart: Giỏ hàng
     add: Cho vào giỏ
     add_to_cart: Cho vào giỏ
@@ -34,5 +36,4 @@ vi:
       confirm: Xác nhận
       complete: Hoàn thành 
       address: Địa chỉ
-    cart:
-      add: Cho vào giỏ
+    
