@@ -29,6 +29,7 @@ vi:
     item_total: Tổng số sản phẩm
     item_description: Miêu tả sản phẩm
     empty_cart: Làm trống giỏ
+    shopping_cart: Giỏ mua sắm
     order_state:
       confirm: Xác nhận
       complete: Hoàn thành 
