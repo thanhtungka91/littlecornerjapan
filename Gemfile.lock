@@ -10,6 +10,14 @@ GIT
       spree_core (>= 3.1.0, < 4.0)
 
 GIT
+  remote: https://github.com/spree-contrib/spree_mail_settings.git
+  revision: 35af3a561e7067a63289825bebe147bcd3aa8d78
+  specs:
+    spree_mail_settings (3.2.0.alpha)
+      spree_auth_devise (>= 3.1.0, < 4.0)
+      spree_backend (>= 3.1.0, < 4.0)
+
+GIT
   remote: https://github.com/spree-contrib/spree_social.git
   revision: c688bbf77ed33d8aa3b9b7c0ec3a5ae43483a56e
   specs:
@@ -418,6 +426,7 @@ DEPENDENCIES
   spree_auth_devise (~> 3.2)
   spree_gateway (~> 3.2)
   spree_i18n!
+  spree_mail_settings!
   spree_social!
   spring
   spring-watcher-listen (~> 2.0.0)
