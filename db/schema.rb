@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170623154309) do
+ActiveRecord::Schema.define(version: 20170624091127) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -87,6 +87,16 @@ ActiveRecord::Schema.define(version: 20170623154309) do
     t.index ["position"], name: "index_spree_assets_on_position", using: :btree
     t.index ["viewable_id"], name: "index_assets_on_viewable_id", using: :btree
     t.index ["viewable_type", "type"], name: "index_assets_on_viewable_type_and_type", using: :btree
+  end
+
+  create_table "spree_authentication_methods", force: :cascade do |t|
+    t.string   "environment"
+    t.string   "provider"
+    t.string   "api_key"
+    t.string   "api_secret"
+    t.boolean  "active"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "spree_calculators", force: :cascade do |t|
@@ -949,6 +959,14 @@ ActiveRecord::Schema.define(version: 20170623154309) do
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
     t.index ["active"], name: "index_spree_trackers_on_active", using: :btree
+  end
+
+  create_table "spree_user_authentications", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "provider"
+    t.string   "uid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "spree_users", force: :cascade do |t|

@@ -32,6 +32,8 @@ vi:
     item_description: Miêu tả sản phẩm
     empty_cart: Làm trống giỏ
     shopping_cart: Giỏ mua sắm
+    empty: Trống
+    shop_by_taxonomy: Mua %{taxonomy}
     order_state:
       confirm: Xác nhận
       complete: Hoàn thành 
