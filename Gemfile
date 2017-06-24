@@ -56,5 +56,8 @@ gem 'spree_gateway', '~> 3.2'
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n'
 gem 'spree_social', github: 'spree-contrib/spree_social'
 
+# for create env file 
+gem 'figaro'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
