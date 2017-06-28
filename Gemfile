@@ -61,5 +61,7 @@ gem 'figaro'
 # for mail 
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
 
+gem 'spree_editor', github: 'spree-contrib/spree_editor'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/spree-contrib/spree_editor.git
+  revision: 1966d3c87754aeb07e9d5543dd3d17e4e0754dfb
+  specs:
+    spree_editor (3.2.0.alpha)
+      ckeditor (~> 4.2.0)
+      spree_backend (>= 3.1.0, < 4.0)
+      spree_core (>= 3.1.0, < 4.0)
+      tinymce-rails (~> 4.2.5)
+
+GIT
   remote: https://github.com/spree-contrib/spree_i18n.git
   revision: 31f9011a035106034eaacf94a9e4f936ad4208c1
   specs:
@@ -61,7 +71,7 @@ GEM
     activejob (5.0.4)
       activesupport (= 5.0.4)
       globalid (>= 0.3.6)
-    activemerchant (1.67.0)
+    activemerchant (1.68.0)
       activesupport (>= 3.2.14, < 6.x)
       builder (>= 2.1.2, < 4.0.0)
       i18n (>= 0.6.9)
@@ -101,6 +111,9 @@ GEM
       rails (>= 4.1, < 5.1)
     carmen (1.0.2)
       activesupport (>= 3.0.0)
+    ckeditor (4.2.3)
+      cocaine
+      orm_adapter (~> 0.5.0)
     cldr-plurals-runtime-rb (1.0.1)
     climate_control (0.2.0)
     cocaine (0.5.8)
@@ -237,7 +250,7 @@ GEM
       addressable
       css_parser (>= 1.4.10)
       htmlentities (>= 4.0.0)
-    premailer-rails (1.9.6)
+    premailer-rails (1.9.7)
       actionmailer (>= 3, < 6)
       premailer (~> 1.7, >= 1.7.9)
     public_suffix (2.0.5)
@@ -381,6 +394,8 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.7)
+    tinymce-rails (4.2.8)
+      railties (>= 3.1.1)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.3)
@@ -424,6 +439,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   spree (~> 3.2.0)
   spree_auth_devise (~> 3.2)
+  spree_editor!
   spree_gateway (~> 3.2)
   spree_i18n!
   spree_mail_settings!

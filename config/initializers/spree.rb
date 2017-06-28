@@ -17,4 +17,4 @@ end
 
 Spree.user_class = "Spree::User"
 Spree::Frontend::Config[:locale] = :vi
-Spree::Backend::Config[:locale] = :vi
+Spree::Backend::Config[:locale] = :en
