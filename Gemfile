@@ -63,5 +63,7 @@ gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
 
 gem 'spree_editor', github: 'spree-contrib/spree_editor'
 
+gem 'spree_sitemap', github: 'spree-contrib/spree_sitemap'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

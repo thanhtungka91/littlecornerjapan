@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/spree-contrib/spree_i18n.git
-  revision: 31f9011a035106034eaacf94a9e4f936ad4208c1
+  revision: e171db2ae3028648621023d6184be817b5a63750
   specs:
     spree_i18n (3.2.0.alpha)
       i18n_data
@@ -28,8 +28,16 @@ GIT
       spree_backend (>= 3.1.0, < 4.0)
 
 GIT
+  remote: https://github.com/spree-contrib/spree_sitemap.git
+  revision: 102b954ee4b3ceb1b4607cc1c89aa63101000478
+  specs:
+    spree_sitemap (3.2.0.alpha)
+      sitemap_generator
+      spree_core (>= 3.1.0, < 4.0)
+
+GIT
   remote: https://github.com/spree-contrib/spree_social.git
-  revision: c688bbf77ed33d8aa3b9b7c0ec3a5ae43483a56e
+  revision: d8bbb65b18c81cc59ee03c454475374a24e5f203
   specs:
     spree_social (3.2.0.alpha)
       oa-core
@@ -111,7 +119,7 @@ GEM
       rails (>= 4.1, < 5.1)
     carmen (1.0.2)
       activesupport (>= 3.0.0)
-    ckeditor (4.2.3)
+    ckeditor (4.2.4)
       cocaine
       orm_adapter (~> 0.5.0)
     cldr-plurals-runtime-rb (1.0.1)
@@ -295,7 +303,7 @@ GEM
       activesupport (>= 3.0)
       i18n
       polyamorous (~> 1.3)
-    rb-fsevent (0.9.8)
+    rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     responders (2.4.0)
@@ -313,6 +321,8 @@ GEM
       tilt (>= 1.1, < 3)
     select2-rails (3.5.9.1)
       thor (~> 0.14)
+    sitemap_generator (5.3.1)
+      builder (~> 3.0)
     spree (3.2.1)
       spree_api (= 3.2.1)
       spree_backend (= 3.2.1)
@@ -443,6 +453,7 @@ DEPENDENCIES
   spree_gateway (~> 3.2)
   spree_i18n!
   spree_mail_settings!
+  spree_sitemap!
   spree_social!
   spring
   spring-watcher-listen (~> 2.0.0)
