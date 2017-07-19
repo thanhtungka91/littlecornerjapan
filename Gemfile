@@ -68,5 +68,12 @@ gem 'spree_sitemap', github: 'spree-contrib/spree_sitemap'
 # for crontab 
 gem 'whenever', :require => false
 
+# for static page 
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
+
+# add zoom 
+# gem "spree_product_zoom", :git => "git://github.com/spree/spree_product_zoom.git"
+# for review product 
+gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
