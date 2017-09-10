@@ -5,10 +5,21 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.3.4 
 
-* System dependencies
-
+* System dependencies Ubuntu 16.04 
+    Imagemagick 
+    ```
+    sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev libmagic-dev
+    sudo apt-get install imagemagick
+    sudo apt-get update
+    ```
+    ```
+    sudo apt-get update
+    sudo apt-get install libpq-dev
+    ```
+    Postgres Library 
+    
 * Configuration
 
 * Database creation
