@@ -45,7 +45,6 @@ Things you may want to cover:
     sudo apt-get install -y nodejs && sudo ln -sf /usr/bin/nodejs /usr/local/bin/node
     ```
     
-* Configuration
 
 * Database creation
     - Instal postgres 
@@ -68,9 +67,17 @@ Things you may want to cover:
     bundle exec rake spree_auth:admin:create RAILS_ENV=production
     ```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+* How to run on production server 
+    - Build source then migrate db, seed  
+    ```
+    bundle install --deployment --without development test
+    bundle exec rake assets:precompile RAILS_ENV=production
+    bundle exec rake db:seed RAILS_ENV=production
+    ```
+    - gen sitemap 
+    ```
+    bundle exec rake sitemap:refresh RAILS_ENV=production
+    ```
 
 * Deployment instructions
     - Install nginx, passenger 
@@ -134,6 +141,7 @@ Things you may want to cover:
     ```
 
 * Config STMP with Sendgird 
+  1. Go to sendgrid and create an account 
 ```
     SMTP DOMAIN 
     smtp.sendgrid.net
@@ -143,12 +151,8 @@ Things you may want to cover:
     587
     SECURE CONNECTION TYPE
     None
-    SECURE CONNECTION TYPE
-    None
     SMTP AUTHENTICATION TYPE
     login
-    SMTP AUTHENTICATION TYPE
-
     SMTP USERNAME 
     thanhtungka91
     SMTP PASSWORD
