@@ -1,9 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is deploy on amz ec 2, ubuntu 16.04 
 
-Things you may want to cover:
+https://littlecornerjapan.com
 
 * Ruby version: 2.3.4 
     - using rvm for manage Ruby version  1  sudo apt-get update
