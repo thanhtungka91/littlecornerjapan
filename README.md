@@ -133,4 +133,23 @@ Things you may want to cover:
     passenger-config about ruby-command
     ```
 
-* ...
+* Config STMP with Sendgird 
+```
+    SMTP DOMAIN 
+    smtp.sendgrid.net
+    SMTP MAIL HOST 
+    smtp.sendgrid.net
+    SMTP PORT 
+    587
+    SECURE CONNECTION TYPE
+    None
+    SECURE CONNECTION TYPE
+    None
+    SMTP AUTHENTICATION TYPE
+    login
+    SMTP AUTHENTICATION TYPE
+
+    SMTP USERNAME 
+    thanhtungka91
+    SMTP PASSWORD
+```
