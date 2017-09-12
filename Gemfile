@@ -71,6 +71,9 @@ gem 'whenever', :require => false
 # for static page 
 gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 
+#for api 
+gem 'rack-cors', :require => 'rack/cors'
+# gem 'rmagick'
 # add zoom 
 # gem "spree_product_zoom", :git => "git://github.com/spree/spree_product_zoom.git"
 # for review product 
