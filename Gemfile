@@ -73,9 +73,10 @@ gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 
 #for api 
 gem 'rack-cors', :require => 'rack/cors'
+# gem "paperclip", "~> 4.1"
 # gem 'rmagick'
 # for s3 aws 
-gem 'aws-sdk', '~> 3'
+gem 'aws-sdk', '< 2.0'
 # add zoom 
 # gem "spree_product_zoom", :git => "git://github.com/spree/spree_product_zoom.git"
 # for review product 
