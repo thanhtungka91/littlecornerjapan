@@ -81,5 +81,9 @@ gem 'aws-sdk', '< 2.0'
 # gem "spree_product_zoom", :git => "git://github.com/spree/spree_product_zoom.git"
 # for review product 
 gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
+
+# for multi currency 
+gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

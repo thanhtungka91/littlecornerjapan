@@ -4,6 +4,12 @@ This app is deploy on amz ec 2, ubuntu 16.04
 
 https://littlecornerjapan.com
 
+Demo 
+----
+Try Spree framework with direct deployment on Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/spree/spree)
+
 * Ruby version: 2.3.4 
     - using rvm for manage Ruby version  1  sudo apt-get update
     ```
