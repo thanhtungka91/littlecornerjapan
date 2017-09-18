@@ -85,5 +85,10 @@ gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
 # for multi currency 
 gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
 
+#for relate product 
+gem 'spree_related_products', github: 'spree-contrib/spree_related_products'
+
+#for print invoice 
+gem 'spree_print_invoice', github: 'spree-contrib/spree_print_invoice', branch: 'master'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
