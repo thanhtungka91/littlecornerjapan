@@ -133,7 +133,36 @@ Deface::Override.new(virtual_path: 'spree/layouts/spree_application',
     .test {
         margin: auto;
         width: 50%;
-        padding: 10px;
+        padding: 0px;
+    }
+    .fb-messengermessageus {
+        position:absolute; 
+        right:50px; 
+        bottom:5px;
+        width: 100px;
     }
     </style>
+    <div class='fb-messengermessageus'
+        messenger_app_id='132275117399677' 
+        page_id='1257448997692969'
+        color='blue'
+        size='large' >
+    </div>    
+    <script>
+        window.fbAsyncInit = function() {
+        FB.init({
+            appId: '1737839653123345',
+            xfbml: true,
+            version: 'v2.6'
+        });
+        };
+        (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = '//connect.facebook.net/en_US/sdk.js';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
   ")
