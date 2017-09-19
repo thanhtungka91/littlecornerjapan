@@ -43,14 +43,12 @@ Deface::Override.new(virtual_path: 'spree/layouts/spree_application',
       <h2 class='title-widget'>Địa Chỉ Cửa Hàng</h2>
 
       <ul>
-        <li><a  href='#'><i class='fa fa-angle-double-right'></i>  Test Series Schedule</a></li>
-        <li><a  href='#'><i class='fa fa-angle-double-right'></i>  Postal Coaching</a></li>
-        <li><a  href='#'><i class='fa fa-angle-double-right'></i>  PG Dr. Bhatia Books</a></li>
-        <li><a  href='#'><i class='fa fa-angle-double-right'></i>  UG Courses</a></li>
-        <li><a  href='#'><i class='fa fa-angle-double-right'></i>  Satellite Education</a></li>
-        <li><a  href='#'><i class='fa fa-angle-double-right'></i>  Study Centres</a></li>
-        <li><a  href='#'><i class='fa fa-angle-double-right'></i>  State P.G. Mocks</a></li>
-        <li><a  href='#' target='_blank'><i class='fa fa-angle-double-right'></i> Results</a></li>
+        <li><h4> Hà Nội</h4></li>
+        <p> 215 Tô Hiệu - Cầu Giấy - Hà Nội </p>
+        <p> SDT: 0914 369 741  </p>
+        <li><h4> Kỳ Anh</h4></li>
+        <p> Thị Xã Kỳ Anh - Hà Tĩnh (gần cầu trí) </p>
+        <p> SDT: 0981 240 939  </p>
       </ul>
 
       </li>
