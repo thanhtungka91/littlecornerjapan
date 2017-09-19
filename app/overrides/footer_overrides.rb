@@ -136,7 +136,7 @@ Deface::Override.new(virtual_path: 'spree/layouts/spree_application',
         padding: 0px;
     }
     .fb-messengermessageus {
-        position:absolute; 
+        position:fixed; 
         right:50px; 
         bottom:5px;
         width: 100px;
