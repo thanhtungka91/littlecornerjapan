@@ -1,5 +1,5 @@
 Deface::Override.new(virtual_path: 'spree/products/show',
-  insert_after: "[data-hook='product_description']",
+  insert_after: "[data-hook='product_right_part_wrap']",
   name: 'facebook_plugin',
   text: "
   <div id='fb-root'></div>
