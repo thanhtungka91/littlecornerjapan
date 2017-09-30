@@ -85,6 +85,8 @@ gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
 # for multi currency 
 gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
 
+# for sale 
+gem 'spree_sales', github: 'thanhtungka91/spree_sales', branch: 'master'
 #for relate product 
 gem 'spree_related_products', github: 'spree-contrib/spree_related_products'
 

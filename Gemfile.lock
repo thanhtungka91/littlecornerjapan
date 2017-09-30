@@ -95,6 +95,17 @@ GIT
       spree_core (>= 3.1.0, < 4.0)
       spree_extension
 
+GIT
+  remote: https://github.com/thanhtungka91/spree_sales.git
+  revision: aad85883f2724e6dd680460ecf73e640e5e95cc0
+  branch: master
+  specs:
+    spree_sales (3.2.0)
+      date_validator
+      spree_core (>= 3.1.0, < 4.0)
+      spree_extension
+      spree_frontend (>= 3.1.0, < 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -187,6 +198,9 @@ GEM
     concurrent-ruby (1.0.5)
     css_parser (1.6.0)
       addressable
+    date_validator (0.9.0)
+      activemodel
+      activesupport
     deface (1.2.0)
       nokogiri (~> 1.6)
       polyglot
@@ -533,6 +547,7 @@ DEPENDENCIES
   spree_print_invoice!
   spree_related_products!
   spree_reviews!
+  spree_sales!
   spree_sitemap!
   spree_social!
   spree_static_content!
