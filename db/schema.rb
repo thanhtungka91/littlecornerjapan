@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170719152866) do
+ActiveRecord::Schema.define(version: 20170923134635) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -110,6 +110,19 @@ ActiveRecord::Schema.define(version: 20170719152866) do
     t.boolean  "active"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "spree_bookkeeping_documents", force: :cascade do |t|
+    t.string   "printable_type"
+    t.integer  "printable_id"
+    t.string   "template"
+    t.string   "number"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "email"
+    t.decimal  "total",          precision: 12, scale: 2
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
   end
 
   create_table "spree_calculators", force: :cascade do |t|
@@ -633,6 +646,26 @@ ActiveRecord::Schema.define(version: 20170719152866) do
     t.index ["order_id"], name: "index_spree_reimbursements_on_order_id", using: :btree
   end
 
+  create_table "spree_relation_types", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "applies_to"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_relations", force: :cascade do |t|
+    t.integer  "relation_type_id"
+    t.string   "relatable_type"
+    t.integer  "relatable_id"
+    t.string   "related_to_type"
+    t.integer  "related_to_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.decimal  "discount_amount",  precision: 8, scale: 2, default: "0.0"
+    t.integer  "position"
+  end
+
   create_table "spree_return_authorization_reasons", force: :cascade do |t|
     t.string   "name"
     t.boolean  "active",     default: true
@@ -702,6 +735,19 @@ ActiveRecord::Schema.define(version: 20170719152866) do
   create_table "spree_roles", force: :cascade do |t|
     t.string "name"
     t.index ["name"], name: "index_spree_roles_on_name", using: :btree
+  end
+
+  create_table "spree_sale_prices", force: :cascade do |t|
+    t.integer  "price_id"
+    t.float    "value"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.boolean  "enabled"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["price_id", "start_at", "end_at", "enabled"], name: "index_active_sale_prices_for_price", using: :btree
+    t.index ["price_id"], name: "index_sale_prices_for_price", using: :btree
+    t.index ["start_at", "end_at", "enabled"], name: "index_active_sale_prices_for_all_variants", using: :btree
   end
 
   create_table "spree_shipments", force: :cascade do |t|
