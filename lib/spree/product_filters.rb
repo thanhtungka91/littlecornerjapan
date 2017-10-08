@@ -69,7 +69,7 @@ module Spree
         v = Spree::Price.arel_table
         conds = [[Spree.t(:under_price, price: format_price(200000)), v[:amount].lteq(200000)],
                  ["#{format_price(200000)} - #{format_price(300000)}", v[:amount].in(200000..300000)],
-                 ["#{format_price(300000)} - #{format_price(400000)}", v[:amount].in(300000.400000)],
+                 ["#{format_price(300000)} - #{format_price(400000)}", v[:amount].in(300000..400000)],
                  ["#{format_price(400000)} - #{format_price(5000000)}", v[:amount].in(400000..500000)],
                  [Spree.t(:or_over_price, price: format_price(500000)), v[:amount].gteq(500000)]]
         {
