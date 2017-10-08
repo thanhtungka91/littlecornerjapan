@@ -9,6 +9,8 @@
 #
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
+require './lib/spree/product_filters.rb'
+
 Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
