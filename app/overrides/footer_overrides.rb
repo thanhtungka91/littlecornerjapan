@@ -18,14 +18,12 @@ Deface::Override.new(virtual_path: 'spree/layouts/spree_application',
               <h2 class='title-widget'>Sản Phẩm</h2>
 
               <ul>
-                <li><a  href='#'><i class='fa fa-angle-double-right'></i> About Us</a></li>
-                  <li><a  href='#'><i class='fa fa-angle-double-right'></i> Contact Us</a></li>
-                  <li><a  href='#'><i class='fa fa-angle-double-right'></i> Success Stories</a></li>
-                  <li><a  href='#'><i class='fa fa-angle-double-right'></i> PG Courses</a></li>
-                  <li><a  href='#'><i class='fa fa-angle-double-right'></i> Achiever's Batch</a></li>
-                  <li><a  href='#'><i class='fa fa-angle-double-right'></i>  Regular Batch</a></li>
-                  <li><a  href='#'><i class='fa fa-angle-double-right'></i>  Test & Discussion</a></li>
-                  <li><a  href='#'><i class='fa fa-angle-double-right'></i>  Fast Track T & D</a></li>
+                  <li><a  href='https://littlecornerjapan.com/vi/t/my-pham'><i class='fa fa-angle-double-right'></i> Mỹ Phẩm</a></li>
+                  <li><a  href='https://littlecornerjapan.com/vi/t/thuc-pham-chuc-nang'><i class='fa fa-angle-double-right'></i> Thực phẩm chức năng</a></li>
+                  <li><a  href='https://littlecornerjapan.com/vi/t/sua'><i class='fa fa-angle-double-right'></i> Sữa Nhật</a></li>
+                  <li><a  href='https://littlecornerjapan.com/vi/t/tra-nhat'><i class='fa fa-angle-double-right'></i> Trà Nhật</a></li>
+                  <li><a  href='https://littlecornerjapan.com/vi/t/do-gia-dung-hang-dien-tu'><i class='fa fa-angle-double-right'></i> Hàng điện tử gia dụng</a></li>
+                  <li><a  href='https://littlecornerjapan.com/vi/t/do-dung-gia-dinh-bep-phu-kien'><i class='fa fa-angle-double-right'></i>  Đồ gia dụng phụ kiện</a></li>
               </ul>
 
       </li>
