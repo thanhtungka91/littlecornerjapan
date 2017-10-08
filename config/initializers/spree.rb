@@ -14,6 +14,7 @@ Spree.config do |config|
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
   config.currency = 'VND'
+  config.products_per_page = 30
 end
 
 Spree.user_class = "Spree::User"
