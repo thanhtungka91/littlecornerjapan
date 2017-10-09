@@ -1,0 +1,112 @@
+/* based on http://www.htmldog.com/articles/suckerfish/dropdowns/  */ 
+ul.dropdown_menu, ul.dropdown_menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+}
+ul.dropdown_menu ul li {
+	 width: 300px;
+	 padding: 4px 0px 0px 10px; 
+	 background-color: #e0e0e0;
+	 border-style: dotted; border-color: black; border-width: 0px 0px 1px 0px; 
+}
+ul.dropdown_menu ul li a {
+	 width: 300px;
+	 text-transform: none;
+}
+ul.dropdown_menu ul li.current a {
+	 color: #000;
+}
+ul.dropdown_menu a {
+	display: block;
+	width: 10em;
+}
+
+ul.dropdown_menu li {
+	 padding: 0px 10px 0px 10px; 
+}
+
+ul.dropdown_menu li ul {
+	 position: absolute;
+	 width: 6em;
+	 left: -999em;
+	 z-index: 999;
+}
+
+ul.dropdown_menu li:hover ul {
+	left: auto;
+}
+/* second level */ 
+ul.dropdown_menu li ul ul {
+	margin: -1em 0 0 10em;
+}
+ul.dropdown_menu li:hover ul ul, ul.dropdown_menu ul.sfhover ul ul {
+	left: -999em;
+}
+ul.dropdown_menu li:hover ul, ul.dropdown_menu li li:hover ul, ul.dropdown_menu ul.sfhover ul, ul.dropdown_menu li ul.sfhover ul {
+	left: auto;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  #currency-select, #locale-select, #sidebar {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+  /*for dropdown here*/
+
+  ul.dropdown_menu, ul.dropdown_menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+}
+ul.dropdown_menu ul li {
+	 width: 300px;
+	 padding: 4px 0px 0px 10px; 
+	 background-color: #e0e0e0;
+	 border-style: dotted; border-color: black; border-width: 0px 0px 1px 0px; 
+}
+ul.dropdown_menu ul li a {
+	 width: 300px;
+	 text-transform: none;
+}
+ul.dropdown_menu ul li.current a {
+	 color: #000;
+}
+ul.dropdown_menu a {
+	display: block;
+	width: 10em;
+}
+
+ul.dropdown_menu li {
+	 padding: 0px 10px 0px 10px; 
+}
+
+ul.dropdown_menu li ul {
+	 position: absolute;
+	 width: 6em;
+	 left: -999em;
+	 z-index: 999;
+}
+
+ul.dropdown_menu li:hover ul {
+	left: auto;
+}
+/* second level */ 
+ul.dropdown_menu li ul ul {
+	margin: -1em 0 0 10em;
+}
+ul.dropdown_menu li:hover ul ul, ul.dropdown_menu ul.sfhover ul ul {
+	left: -999em;
+}
+ul.dropdown_menu li:hover ul, ul.dropdown_menu li li:hover ul, ul.dropdown_menu ul.sfhover ul, ul.dropdown_menu li ul.sfhover ul {
+	left: auto;
+}
+}
