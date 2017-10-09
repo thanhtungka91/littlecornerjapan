@@ -51,7 +51,7 @@ ul.dropdown_menu li:hover ul, ul.dropdown_menu li li:hover ul, ul.dropdown_menu 
 
 
 @media screen and (max-width: 600px) {
-  #currency-select, #locale-select, #sidebar {
+  #currency-select, #locale-select, #sidebar ,#reviews,#main-nav-bar {
     visibility: hidden;
     clear: both;
     float: left;
